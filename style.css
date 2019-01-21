@@ -50,7 +50,6 @@ h3{
     font-size: 12px;
 }
 p{
-    font-size: 18px;
     line-height: 1.8em;
     letter-spacing: 0.2em;
     margin-left: 32px;
@@ -61,8 +60,8 @@ header{
 }
 
 .entry{
-    padding: 20px;
-    margin: 0;
+    padding: 40px 20px;
+    margin: 100px 0;
     position: relative;
 }
 
@@ -238,12 +237,20 @@ footer{
     padding: 20px;
 }
 
+.share{
+    text-align: center;
+    margin-top: 100px;
+}
+.share p{
+    font-size: 24px;
+}
 .socialIcon{
     margin: 16px;
+    width: 100%;
 }
 .socialIcon img{
-    width: 32px;
-    padding: 2px;
+    width: 16%;
+    padding: 20px;
     margin-bottom:20px;
 }
 
