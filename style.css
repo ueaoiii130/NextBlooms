@@ -3,6 +3,31 @@
     margin: 0;
     padding: 0;
 }
+
+/*レスポンシブ*/
+@media screen and (min-width:480px) {
+　/*　画面サイズが480pxからはここを読み込む　*/
+　h1 { color:#ededed;}
+　}
+　@media screen and (min-width:768px) and ( max-width:1024px) {
+　/*　画面サイズが768pxから1024pxまではここを読み込む　*/
+　h1 {color:red;}
+　}
+　@media screen and (min-width:1024px) {
+　/*　画面サイズが1024pxから*/
+    header .logo{
+        position: absolute;
+        top: 50vh;
+        left: 40px;
+    }
+    header .logo p{
+        font-size: 1em;
+        letter-spacing: 0.64em;
+        font-weight: bold;
+        float: right;
+        color: #3E3A39;
+    }
+}
 html{
     width: 100%;
 }
@@ -28,7 +53,6 @@ body{
     width: 100%;
 }
 h1{
-/*    font-family: roboto, sans-serif;*/
     font-family: 'Bebas';
     color: #3E3A39;
     font-size: 5.8em;
@@ -324,3 +348,5 @@ footer{
     transform: scale(0.95, 1.05);
   }
 }
+
+
