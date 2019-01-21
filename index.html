@@ -27,8 +27,9 @@
     <meta name="twitter:title" content="Next Blooms!" />
     <meta name="twitter:description" content="次世代女子の「はたらく」を考えるガールズサミット" />
     
-    <!--  jQuery  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  slick  -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    
     <!--  responsive  -->
     <meta name=”viewport” content=”width=device-width,initial-scale=1″>
     
@@ -37,23 +38,40 @@
 </head>
 
 <body>
+   
+   <!--  jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    
+    <script type="text/javascript">
+        $(function() {
+          //ここにSlickのjQueryを記述
+        $('.meetup-slide').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          //画像下のドット（ページ送り）を表示
+          dots: false,
+          arrows: false,
+          // 表示中の画像を中央へ
+          centerMode: true,
+          // クリックしたサムネイル画像をスライダーに表示するかどうか
+          focusOnSelect: true,
+          //自動で再生されるか
+          autoplay: true,
+          //自動再生のスピード
+          autoplaySpeed: 800,
+        });
+
+        });
+  </script>
+    
     <header>
            
         <img id="top-image" src="assets/IMG_0101.jpg" alt="top-image">
-<!--
-       <button class="hamburger">
-          <span class="hamburger_container">
-             <span class="hamburger_default">
-                 
-             </span>
-             
-             <span class="hamburger_opend">
-                 
-             </span>
-              
-          </span>
-       </button>
--->
         <span class="logo">
            <img src="assets/nextblooms_bold_logo_black.png" alt="top-logo">
            <p>次世代女子の「はたらく」を考えるガールズミートアップ</p>
@@ -81,11 +99,10 @@
                     学生生活も、どんどん過ぎていくのに。<br>
                     次の世代の私たちは、このままでいいの？<br>
                     <br>
-                    これからは、就活じゃなくて、<br>
-                    ”わたしの好きなことを見つける活動”<br>
-                    それに、大学生活の貴重で勿体無くて大切な、<br>
-                    私たちの時間を使うんだ。<br>
-                    好きなことでキラキラ輝く、そんな１人になるんだ。<br>
+                    わたしは何をしたい？って、<br>
+                    わたしが一番理解してあげられるから。<br>
+                    「自分に何ができるか」<br>
+                    「どんな大人になろう？」って、そんな風に考えたい。<br>
                     悩んでる時間なんてない。<br>
                     だから、<br>
                     <br>
@@ -98,18 +115,24 @@
            <h1>ABOUT</h1>
            <h2>NextBlooms!とは？</h2>
 <!--           <img src="assets/detail-image.jpg" alt="detail-image">-->
-          <h3>女の子の「はたらく」を考える、<br>21世紀最強のガールズイベント！</h3>
             <section class="about-contents">
                <p>「ワクワクしながら仕事したい！」<br>「好きを仕事にしたい！」<br>
                 そう思うことはあるけれど、何からやればいいのやら、<br>
                 なかなか行動が起こせない…。 <br>
-                そんな女子大生に届けたい、女子の「はたらく」を考える<br>
-                21世紀最強のガールズイベントです。 <br>
-                <br>
-                <br>
-                「好きを仕事に」を実現しているゲストとの座談会や、<br>
-                ワークショップを通して、 <br>
+                そんな今を生きる私たちが、女の子が一歩を踏み出すきっかけを作りたくて、<br>
+                ”HEISEIGirlsMeetup”として過去3回開催してきた21世紀最強のガールズイベントがよりパワーアップします！<br>
                 今日、あなたの “はじめの一歩“ を見つけませんか？</p>
+            </section>
+            <section class="about-meetup">
+                <p>これまでの開催の様子</p>
+                <div class="meetup-slide">
+                    <div><img src="assets/img-01.jpg" alt=""></div>
+                    <div><img src="assets/img-02.jpg" alt=""></div>
+                    <div><img src="assets/img-03.jpg" alt=""></div>
+                    <div><img src="assets/img-04.jpg" alt=""></div>
+                    <div><img src="assets/img-05.png" alt=""></div>
+                    <div><img src="assets/img-06.JPG" alt=""></div>
+                </div>
             </section>
        </div><!--   about    -->
        
