@@ -105,8 +105,11 @@ header .logo p{
 .intro-message p{
     font-size: 32px;
     line-height: 1.8em;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.14em;
     margin-left: 32px;
+}
+.intro-message span{
+    color: #9B9B9B;
 }
 
 .about-contents{
