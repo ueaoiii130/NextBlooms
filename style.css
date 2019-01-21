@@ -59,6 +59,43 @@ header{
     position: relative;
     height: 500px;
 }
+
+.entry{
+    padding: 20px;
+    margin: 0;
+    position: relative;
+}
+
+
+.entry-btn{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+    width: 80%;
+    clear: both;
+    text-align: center;
+      display: inline-block;
+      padding: 0.65em 2em;
+    margin-top: 400px;
+    color: #fff;
+    background: #F5CD5F;
+        text-decoration: none;
+    letter-spacing: 0.8em;
+    font-weight: bold;
+    font-size: 40px;
+     -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.entry-btn:hover{
+    color: #F5CD5F;
+    background: #fff;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
 img{
     width: 100%;
 }
@@ -145,6 +182,7 @@ header .logo p{
 
 .about-meetup{
     margin: 20px;
+    width: 90%;
 }
 /*GUEST*/
 .guest-01{
@@ -198,4 +236,84 @@ footer{
     font-size: 2em;
     letter-spacing: 0.18em;
     padding: 20px;
+}
+
+.socialIcon{
+    margin: 16px;
+}
+.socialIcon img{
+    width: 32px;
+    padding: 2px;
+    margin-bottom:20px;
+}
+
+/*button*/
+.btn{
+  border-radius: 12px;
+}
+.btn:hover, .btn:focus{
+  transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+  -webkit-animation: gelatine 0.5s 1;
+          animation: gelatine 0.5s 1;
+}
+
+@-webkit-keyframes gelatine {
+  from,to {
+    -webkit-transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+  }
+  from,to {
+    -webkit-transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+  }
+}
+@keyframes gelatine {
+  from,to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+  from,to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
 }
