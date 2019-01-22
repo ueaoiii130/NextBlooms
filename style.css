@@ -4,30 +4,7 @@
     padding: 0;
 }
 
-/*レスポンシブ*/
-@media screen and (min-width:480px) {
-　/*　画面サイズが480pxからはここを読み込む　*/
-　h1 { color:#ededed;}
-　}
-　@media screen and (min-width:768px) and ( max-width:1024px) {
-　/*　画面サイズが768pxから1024pxまではここを読み込む　*/
-　h1 {color:red;}
-　}
-　@media screen and (min-width:1024px) {
-　/*　画面サイズが1024pxから*/
-    header .logo{
-        position: absolute;
-        top: 50vh;
-        left: 40px;
-    }
-    header .logo p{
-        font-size: 1em;
-        letter-spacing: 0.64em;
-        font-weight: bold;
-        float: right;
-        color: #3E3A39;
-    }
-}
+
 html{
     width: 100%;
 }
@@ -55,14 +32,14 @@ body{
 h1{
     font-family: 'Bebas';
     color: #3E3A39;
-    font-size: 5.8em;
+    font-size: 64px;
     letter-spacing: 0.2em;
     text-align: center;
     line-height: 1.4em;
 }
 h2{
     color: #3E3A39;
-    font-size: 1.8em;
+    font-size: 22px;
     letter-spacing: 0.2em;
     text-align: center;
     margin-bottom: 1em;
@@ -87,6 +64,7 @@ header{
     padding: 40px 20px;
     margin: 100px 0;
     position: relative;
+    z-index: 1;
 }
 
 
@@ -142,7 +120,7 @@ header .logo p{
 #top-image{
     width: 80vw;
     float: right;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .intro{
@@ -234,15 +212,18 @@ header .logo p{
     width: 100%;
 }
 .detail p{
-    font-size: 1.2em;
+    font-size: 18px;
     line-height: 1.4em;
 }
 .detail span{
-    font-size: 1.8em;
+    font-size: 16px;
 }
 .access-google-map{
     width: 100%;
     text-align: center;
+}
+.place-txt{
+     margin: 32px 150px;   
 }
 
 /*MESSAGE*/
@@ -349,4 +330,171 @@ footer{
   }
 }
 
+/*レスポンシブ*/
+  @media screen and (max-width: 700px) {
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+            /*　画面サイズ 500pxから999pxまで適用　*/
+
+            /*.content {color: #green;}*/
+    }
+
+    /*PC*/
+    @media screen and (min-width:1000px) {
+    /*　画面サイズ 1000px以上から適用　*/
+        header .logo{
+            position: absolute;
+            top: 400px;
+            left: 40px;
+        }
+        .logo img {
+            min-width: 580px;
+            width: 32em;
+            text-align: left;
+        }
+        #top-image{
+            width: 60vw;
+            float: right;
+            margin-top: 20px;
+        }
+        header .logo p{
+            font-size: 24px;
+            letter-spacing: 0.64em;
+            font-weight: bold;
+            float: left;
+            color: #3E3A39;
+        }
+        
+        .entry{
+            padding: 40px 20px;
+            margin: 120px 0;
+            position: relative;
+        }
+
+
+        .entry-btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+           transform: translate(-50%, -50%);
+            width: 40%;
+            clear: both;
+            text-align: center;
+            display: inline-block;
+            padding: 0.65em 2em;
+            margin-top: 200px;
+            color: #fff;
+            background: #F5CD5F;
+            text-decoration: none;
+            letter-spacing: 0.8em;
+            font-weight: bold;
+            font-size: 24px;
+             -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+        }
+
+        .entry-btn:hover{
+            color: #F5CD5F;
+            background: #fff;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        
+        .intro{
+            clear: both;
+            margin: 320px 32px 0 32px;
+            width: 100%;
+            height: 50vh;
+        }
+        .intro img{
+            width: 640px;
+            margin-bottom: -230px;
+            margin-left: 32px;
+        }
+        .intro-message p{
+            font-size: 18px;
+            line-height: 1.8em;
+            letter-spacing: 0.14em;
+            margin-left: 32px;
+        }
+        .contents{
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+/*            background-size: 100vh;*/
+            padding: 80px 0; 
+            margin: 40px auto;
+            text-align: center;
+            content:"";
+        }
+
+        .contents-content{
+           display: flex;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .contents-content img{
+            width: 420px;
+            margin: 20px;
+            text-align: center;
+        }
+        .about-meetup{
+            margin: 0 auto;
+        }
+        .about-meetup p{
+            padding: 20px 0;
+        }
+        .meetup-slide img{
+            width: 600px;
+        }
+        
+        .about{
+            margin-top: 100px;
+            text-align: center;
+            padding: 80px 0;
+        }
+        .message{
+            text-align: center;
+        }
+    
+        .message img{
+            width: 50%;
+        }
+        
+        .socialIcon{
+            margin: 16px;
+            width: 100%;
+        }
+        .socialIcon img{
+            width: 80px;
+            padding: 20px;
+            margin-bottom:20px;
+        }
+        .share p{
+            font-size: 18px;
+        }
+        .guest{
+            position: relative;
+            height: 100vh;
+            margin: 120px 0;
+            width: 100%;
+        }
+        .guest-01{
+            width: 360px;
+        }
+        .guest-02{
+            width: 360px;
+        }
+        .guest-list{
+           position: absolute;
+            left: 50%;
+            top: 70%;
+            -webkit-transform: translate(-50%, -50%);
+           transform: translate(-50%, -50%);
+        }
+
+    }/*PC*/
 
