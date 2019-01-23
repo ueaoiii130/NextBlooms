@@ -73,12 +73,12 @@ header{
     top: 50%;
     left:50%;
     -webkit-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
     width: 80%;
     clear: both;
     text-align: center;
-      display: inline-block;
-      padding: 0.65em 2em;
+    display: inline-block;
+    padding: 0.65em 2em;
     margin-top: 400px;
     color: #fff;
     background: #F5CD5F;
@@ -185,26 +185,24 @@ header .logo p{
     margin: 20px;
     width: 90%;
 }
+
 /*GUEST*/
+.guest{
+     width: 100vw;   
+}
 .guest-01{
-    padding: 20px; 
-    margin: 20px;
-    width: 100vw;
+    margin: 10px;
     position: relative;
 }
 
-
-
 .guest-02{
-    padding: 20px; 
-    margin: 20px;
-    width: 100vw;
+    margin: 10px;
 }
 .guest-list{
-    display: flex;
+/*    display: flex;*/
     background: #F8F7F5;
     margin: 40px 20px;
-    padding: 40px ;
+    padding: 40px;
 }
 
 /*DETAIL*/
@@ -223,7 +221,7 @@ header .logo p{
     text-align: center;
 }
 .place-txt{
-     margin: 32px 150px;   
+     margin: 8px;   
 }
 
 /*MESSAGE*/
@@ -549,6 +547,7 @@ footer{
             width: 360px;
         }
         .guest-list{
+                display: flex;
            position: absolute;
             left: 50%;
             top: 70%;
