@@ -129,14 +129,14 @@ header .logo p{
     height: 50vh;
 }
 .intro img{
-    width: 60vw;
+    width: 100vw;
     margin-bottom: -230px;
-    margin-left: 32px;
+/*    margin-left: 32px;*/
 }
 .intro-message{
     background: #F8F7F5;
     padding: 20px;
-    padding-top: 280px; 
+    padding-top: 260px; 
     padding-bottom: 80px;
 }
 .intro-message p{
