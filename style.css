@@ -53,7 +53,7 @@ h3{
 p{
     line-height: 1.8em;
     letter-spacing: 0.2em;
-    margin-left: 32px;
+
 }
 header{
     position: relative;
@@ -115,6 +115,7 @@ header .logo p{
     font-weight: bold;
     float: right;
     color: #3E3A39;
+        margin-left: 32px;
 }
 #top-image{
     width: 80vw;
@@ -153,6 +154,17 @@ header .logo p{
     margin: 20px 0;   
 }
 
+.about-meetup{
+    margin: 20px;
+    width: 90%;
+}
+.about p{
+    font-size: 14px;
+    line-height: 1.8em;
+    letter-spacing: 0.14em;
+    margin-left: 32px;
+}
+
 .contents{
     background-image: url(assets/contents-image.jpg);
     min-height: 60vh;
@@ -179,10 +191,7 @@ header .logo p{
 }
 
 
-.about-meetup{
-    margin: 20px;
-    width: 90%;
-}
+
 
 /*GUEST*/
 
@@ -449,6 +458,13 @@ footer{
         .about{
             margin: 200px 0;   
         }
+      .about-contents p {
+            font-size: 14px;
+            margin: 0;
+        }
+      .about-contents{
+          padding: 20px;
+      }
           .guest{
             margin-top: 40px;
             padding-bottom: 2em;
@@ -629,7 +645,7 @@ footer{
             padding: 20px 0;
         }
         .meetup-slide img{
-            width: 600px;
+            width: 100%;
         }
         
         .about{

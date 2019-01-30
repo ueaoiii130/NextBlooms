@@ -52,7 +52,6 @@
         $(function() {
           //ここにSlickのjQueryを記述
         $('.meetup-slide').slick({
-//          slidesToShow: 1,
           slidesToScroll: 1,
           //画像下のドット（ページ送り）を表示
           dots: false,
@@ -66,15 +65,15 @@
           //自動再生のスピード
           autoplaySpeed: 2000,
             responsive: [{
-                breakpoint: 1024,settings: { //601px～1024pxでは3画像表示
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                breakpoint: 2000,settings: { //701px～1024pxでは3画像表示
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             },
             {
-                breakpoint: 600,settings: { //481px～600pxでは2画像表示
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                breakpoint: 700,settings: { //481px～700pxでは2画像表示
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             },
             {
@@ -137,12 +136,11 @@
        <div class="about box">
            <h1>ABOUT</h1>
            <h2>NextBlooms!とは？</h2>
-<!--           <img src="assets/detail-image.jpg" alt="detail-image">-->
             <section class="about-contents">
                <p>「ワクワクしながら仕事したい！」<br>「私にしかできないことをやりたい！」<br>
                 そんな女子たちに届けたい、21世紀最強のガールズイベント！<br>
                 “HEISEI Girls Meetup”として過去3回開催してきたこのイベントですが、<br>
-                大きくなって“Next Blooms!“としてリニューアルします！<br>
+                   大きくなって“Next Blooms!“としてリニューアルします！</p>
             </section>
             <section class="about-meetup">
                 <p>これまでの開催の様子</p>
@@ -154,6 +152,9 @@
                     <div><img src="assets/img-05.png" alt=""></div>
                     <div><img src="assets/img-06.JPG" alt=""></div>
                 </div>
+            </section>
+            <section class="about-contents">
+               <p>※当イベントは、女子大生、専門学生、女子高生など、これからキャリアを選択されるすべての女性の方にご参加いただけます。</p>
             </section>
        </div><!--   about    -->
        
